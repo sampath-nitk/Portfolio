@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/Images/S-Lion-Logo-Preview (1).jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">My Portfolio</a>
+        <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#servicess">Projects</a></li>
+            <li><a href="#Services">Achievement</a></li>
+            <li><a href="#Serviices">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous">
+
+    </script>
+
+    <!--HOME SECTION DESIGN-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <!--<h3>Hi myself</h3>-->
+            <h1>Welcome to My <span>Portfolio</span></h1>
+            <h3>Showcasing my skills and projects</h3>
+            <p>My goal is to excel in the field of technology and contribute to innovative projects that make a positive impact.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/sampath_nitk/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/sampath_nitk/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/sampath_nitk/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sampath-9a3b01281/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <!--<a href="#" class="btn">download cv</a>-->
+        </div>
+
+        <!--<div class="home-img">
+            <img src="/profiledp.png" alt="">
+        </div>-->
+    </section>
+
+
+    <!--ABOUT SECTION DESIGN-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/Images/WhatsApp Image .jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <!--<h3>Frontend developer</h3>-->
+            <p>Hello, I'm Sampath. I recently graduated with a Bachelor of Technology (B.Tech) in Computer and Communication Engineering from Nitte University.</p>
+            <p>My hobbies include playing guitar, reading tech blogs, and hiking in the mountains.</p>
+            <!--<a href="#" class="btn">Read more</a>-->
+
+            <h2 class="headingg">Strengths</h2>
+                <ul>
+                    <li>Strong problem-solving skills</li>
+                    <li>Adaptability to new technologies</li>
+                    <li>Team player with effective communication</li>
+                </ul>
+            
+
+            <h2 class="headingg">Weakness</h2>
+            <p>Inability to say No to others</p>
+        </div>
+    </section>
+
+    <!--SERVICES SECTION DESIGN-->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>skills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend development</h3>
+                <p>HTML/CSS</p>
+                <p>Javascript</p>
+                <p>Bootstrap</p>
+                <!--<a href="#" class="btn">Read more</a>-->
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>Backend development</h3>
+                <p>PHP</p>
+                <p>MySqL</p>
+                <p>Node.js</p>
+                <!--<a href="#" class="btn">Read more</a>-->
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Other Skills</h3>
+                <p>Responsive Web Design</p>
+                <p>Version Control (Git)</p>
+                <p>Problem Solving</p>
+                <!--<a href="#" class="btn">Read more</a>-->
+            </div>
+        </div>
+    </section>
+
+    <!--PROJECT SECTION DESIGN-->
+    <section class="servicess" id="servicess">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="servicess-container">
+            <div class="servicess-box">
+                <!--<i class="fa-solid fa-code"></i>-->
+                <img src="/Images/1.jpg" alt="">
+                <h3>Travel Agency Website</h3>
+                <p>The travel agency website project is designed to provide a seamless and engaging user experience for travelers. It features a dynamic interface where users can easily search and book flights, hotels, and vacation packages.the site ensures secure transactions.</p>
+                <a href="#" class="btn">View project</a>
+            </div>
+
+            <div class="servicess-box">
+                <!--<i class="fa-solid fa-database"></i>-->
+                <img src="/Images/3.jpg" alt="">
+                <h3>IOT Home automation</h3>
+                <p>The IoT Home Automation System project aims to enhance convenience and efficiency in smart homes. It enables users to control lighting, heating, security systems, and appliances remotely via a user-friendly mobile app or voice commands. </p>
+                <a href="#" class="btn">View project</a>
+            </div>
+
+            <div class="servicess-box">
+                <!--<i class="fa-solid fa-laptop-code"></i>-->
+                <img src="/Images/6.jpg" alt="">
+                <h3>Bank management System</h3>
+                <P>The Bank Management System project focuses on creating a robust and efficient database management system for banking operations. The system supports features like account creation, fund transfers, loan processing, and statement generation.</P>
+                <a href="#" class="btn">View project</a>
+            </div>
+        </div>
+    </section>
+
+    <!--ACHIEVEMENT SECTION DESIGN-->
+    <section class="services" id="Services">
+        <h2 class="heading">My <span>Achievements</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <!--<i class="fa-solid fa-code"></i>-->
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Academic Achievements</h3>
+                <p>Awarded Best Student in Computer Science 2024</p>
+                <p>Awarded as the Sports head of the branch 22-23</p>
+                <!--<p>HTML/CSS</p>
+                <p>Javascript</p>
+                <p>Bootstrap</p>-->
+                <!--<a href="#" class="btn">Read more</a>-->
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Awards & Special Mentions</h3>
+                <p>Recognized as best cricketer of the year 2024</p>
+                <p>Worked as Event organizer in Incridea 22 & 23</p>
+                <!--<p>PHP</p>
+                <p>MySqL</p>
+                <p>Node.js</p>-->
+                <!--<a href="#" class="btn">Read more</a>-->
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--CONTACT SECTION DESIGN-->
+    <section class="services" id="Serviices">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-id-card"></i>
+                <h3>Contact Details</h3>
+                <p><span>Email</span>: Sampathsurathkal507@gmail.com</p>
+                <p><span>Phone</span>: +91 9380473158</p>
+                <p><span>Current Address</span>: CL 3 34C NITK Campus srinivasnagar surathkal 575025</p>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Social Media Accounts</h3>
+                <div class="sociall-media">
+                    <a href="https://www.instagram.com/sampath_nitk/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sampath_nitk/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/sampath_nitk/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sampath-9a3b01281/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CONTACT SECTION DESIGN
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile number">
+                <input type="text" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>-->
+
+    <!--FOOTER SECTION DESIGN-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Sampath | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--SCROLL REVEAL JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--TYPED JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--MAIN JS-->
+    <script src="/script.js"></script>
+</body>
+</html>
